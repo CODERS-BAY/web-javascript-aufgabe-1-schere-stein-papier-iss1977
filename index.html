@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <div class="container score-board-container">
+    <div class="row score-board-row">
+
+      <div class="col s3 m2 score-board-col">
+        <!--here goes the score of the computer-->
+        <p id="computer-score">3</p>
+      </div>
+
+      <div class="col s3 m2">
+        <!--here goes the computer avatar-->
+        <img class="img-avatar" src="./images/Avatar-Robot.svg" alt="Robot avatar">
+      </div>
+
+      <div class="col s4 m4 center-align hide-on-small-only valign-wrapper">
+        <!--here goes the hero banner-->
+        <h1 class="hero-title">Schere, Stein und Papier</h1>
+      </div>
+
+      <div class="col s3 m2">
+        <!--here goes the human avatar -->
+        <img class="img-avatar" src="./images/Avatar-human.svg" alt="Human avatar">
+      </div>
+
+      <div class="col s3 m2">
+        <!--here goes the human score -->
+        <p id="human-score">3</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container players-container">
+    <div class="row s12">
+      <div class="col s12 m6 player-frame">
+        <!--Frame for computer-->
+        <div class="col s3 schere-papier-stein-button">
+          <img class="img-avatar" src="./images/Avatar-Robot.svg" alt="Robot avatar">
+        </div>
+       
+        <div id="computer-schere" class="col s3 schere-papier-stein-button "> <!--We are going to add and remove active-choice class to highlight the computer choice with green-->
+          <img class="img-ssp" src="./images/schere.png" alt="Schere">
+        </div>
+        <div id="computer-stein" class="col s3 schere-papier-stein-button">
+          <img class="img-ssp" src="./images/stein.png" alt="Stein">
+        </div>
+        <div id="computer-papier" class="col s3 schere-papier-stein-button">
+          <img class="img-ssp" src="./images/papier.png" alt="Papier">
+        </div>
+      </div>
+      <div class="col s12 m6 player-frame">
+        <!-- Frame for human player-->
+        <div class="col s3 schere-papier-stein-button">
+          <img class="img-avatar" src="./images/Avatar-human.svg" alt="Robot avatar">
+        </div>
+        
+        <div id="player-schere" class="col s3 schere-papier-stein-button hover-effect">
+          <img class="img-ssp" src="./images/schere.png" alt="Schere">
+        </div>
+        <div id="player-stein" class="col s3 schere-papier-stein-button hover-effect">
+          <img class="img-ssp" src="./images/stein.png" alt="Stein">
+        </div>
+        <div id="player-papier" class="col s3 schere-papier-stein-button hover-effect">
+          <img class="img-ssp" src="./images/papier.png" alt="Papier">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--   WIN or LOSE FRAME ----->
+
+  <div class="container win-lose-container">
+    <div class="row">
+      <div class="col s6 win-lose-col">
+        <img id="computer-wins" src="./images/winner.png" alt="Computer wins">
+      </div>
+      <div class="col s6 win-lose-col">
+        <img id="human-wins" src="./images/winner.png" alt="Human wins">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 id="modal-win-header">Modal Header</h4>
+      <p id="modal-win-text">A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn  btn-flat">Close</a>
+    </div>
+  </div>
+  
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
